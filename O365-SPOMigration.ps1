@@ -16,3 +16,4 @@ $al|fl
 Submit-SPOMigrationJob -TargetWebUrl $targetWeb -MigrationPackageAzureLocations $al -Credentials $creds
 $azureSource = Set-SPOMigrationPackageAzureSource -SourceFilesPath $sourceFiles -SourcePackagePath $sourcePackage -AccountName $azureAccountName -AccountKey $azureAccountKey
 Submit-SPOMigrationJob -TargetWebUrl $targetWeb -MigrationPackageAzureLocations $azureSource -Credentials $creds
+Write-Host "Finished"
