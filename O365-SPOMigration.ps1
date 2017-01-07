@@ -1,4 +1,5 @@
-﻿$o365Accountadmin = Read-Host 'Entre com a conta administrativa do Office365'
+﻿Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+$o365Accountadmin = Read-Host 'Entre com a conta administrativa do Office365'
 $creds = (Get-Credential $o365Accountadmin)
 $sourceFiles = Read-Host -Prompt 'Digite o caminho dos arquivos'
 $sourcePackage = Read-Host -Prompt 'Digite o caminho de origem do pacote'
